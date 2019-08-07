@@ -4,7 +4,14 @@
             One of three columns
         </div>
         <div class="col-sm">
-            One of three columns
+            <input type="text" [(ngModel)]="nameOfPokemon">
+            <button class='btn btn-primary' (click)='clickHandler()'>Get data</button>
+
+            <h3>Name: {{pokemon?.name}} </h3>
+            <h4>Weight: {{pokemon?.weight}}</h4>
+            <p>{{pokemon?.sprites.front_default}}</p>
+            <img src="{{pokemon?.sprites.front_default}}" alt="">
+
         </div>
         <div class="col-sm">
             One of three columns
